@@ -77,7 +77,7 @@ public class Product {
 
 
     public double getIvaPrice(){
-        return price * iva;
+        return price * iva; //todo
     }
 
 
