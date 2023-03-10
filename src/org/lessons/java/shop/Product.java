@@ -3,7 +3,6 @@ package org.lessons.java.shop;
 import java.util.Random;
 
 /*
-Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
 Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice-nome
 BONUS: create un metodo che restituisca il codice con un pad left di 0 per arrivare a 8 caratteri
 (ad esempio codice 91 diventa 00000091, mentre codice 123445567 resta come è)  */
@@ -77,7 +76,12 @@ public class Product {
 
 
     public double getIvaPrice(){
-        return price * iva; //todo
+        return price * (1 + (iva / 100));
+    }
+
+
+    public String getExtendedName(){
+        return name + "-" + code;
     }
 
 

@@ -41,11 +41,14 @@ public class Main {
             System.out.print("Prezzo: ");
             System.out.println(products[i].getPrice());
 
+            System.out.print("Iva: ");
+            System.out.println(products[i].getIva());
+
             System.out.print("Prezzo compreso iva: ");
             System.out.println(products[i].getIvaPrice());
 
-            System.out.print("Iva: ");
-            System.out.println(products[i].getIva());
+            System.out.print("Nome esteso del prodotto: ");
+            System.out.println(products[i].getExtendedName());
 
         }
 
